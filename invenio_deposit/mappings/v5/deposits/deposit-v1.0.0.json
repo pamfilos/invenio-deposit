@@ -1,0 +1,70 @@
+{
+    "mappings": {
+        "deposit-v1.0.0": {
+            "properties": {
+                "$schema": {
+                    "type": "text"
+                },
+                "_deposit": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "text"
+                        },
+                        "pid": {
+                            "type": "object",
+                            "properties": {
+                                "revision_id": {
+                                    "type": "integer"
+                                },
+                                "type": {
+                                    "type": "text"
+                                },
+                                "value": {
+                                    "type": "text"
+                                }
+                            }
+                        },
+                        "created_by": {
+                            "type": "integer"
+                        },
+                        "owners": {
+                            "type": "integer"
+                        },
+                        "status": {
+                            "type": "text",
+                            "fields": {
+                                "keyword": {
+                                    "type": "keyword"
+                                }
+                            }
+                        }
+                    }
+                },
+                "_files": {
+                    "type": "object",
+                    "properties": {
+                        "key": {
+                            "type": "text"
+                        },
+                        "bucket": {
+                            "type": "text"
+                        },
+                        "size": {
+                            "type": "integer"
+                        },
+                        "version_id": {
+                            "type": "text"
+                        }
+                    }
+                },
+                "title": {
+                    "type": "text"
+                },
+                "control_number": {
+                    "type": "text"
+                }
+            }
+        }
+    }
+}
